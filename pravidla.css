@@ -1,0 +1,81 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+main {
+    flex: 1;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.alert {
+    background-color: #2d0b12;
+    border-left: 6px solid #ff4d6d;
+    padding: 20px;
+    border-radius: 12px;
+    color: #ffecec;
+    box-shadow: 0 0 10px rgba(255, 77, 109, 0.2);
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.alert strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #ff99aa;
+}
+
+details {
+    background-color: #1e1e2e;
+    border: 1px solid #444;
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+details:hover {
+    border-color: #444; /* stejné jako výchozí, bez blikání */
+    box-shadow: none;
+}
+
+
+summary {
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    padding-left: 20px;
+    color: #ffffff;
+}
+
+summary::before {
+    content: \"\\25B6\"; /* šipka */
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s ease;
+}
+
+details[open] > summary::before {
+    transform: rotate(90deg);
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+details p {
+    margin-top: 10px;
+    line-height: 1.6;
+    color: #ddd;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Pravidla – immortals RP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pravidla.css">
+</head>
+<body>
+<header>
+    <div class="logo">immortalsrp</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Domů</a></li>
+            <li><a href="pravidla.html">Pravidla</a></li>
+            <li><a href="https://csszcz">Obchod</a></li>
+            <!-- <li><a href="pravidla.html">Dokumentace</a></li> -->
+            <li><a href="https://discord.com/invite/Ctj9zQArJk" target="_blank"><i class="fa-brands fa-discord"></i></a></li>
+            <!-- <li><a href="#" class="discord-btn">Přihlásit se</a></li> -->
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="alert">
+        <strong>⚠️ Server je určen výhradně pro osoby starší 16 let — bez výjimek.</strong>
+        <p>Vstupem na server potvrzujete, že vám je minimálně 16 let. Porušení tohoto pravidla povede k okamžitému banu bez možnosti odvolání. Věkové omezení je stanoveno kvůli charakteru obsahu a zajištění vyzrálé komunity.</p>
+        <p>Nepřesné nebo nepravdivé údaje o věku budou považovány za hrubé porušení pravidel.</p>
+        <p>Vedení serveru má právo kdykoli ověřit věk hráče různými způsoby, včetně ověření identity, a v případě pochybností zasáhnout. <strong>Respektujte toto pravidlo. Nebude udělena žádná výjimka.</strong></p>
+    </div>
+
+    <details open>
+        <summary>Herní Pravidla</summary>
+        <details>
+            <summary>Základní Pravidla a Pojmy</summary>
+            <details>
+                <summary>RP (Roleplay)</summary>
+                <p>Roleplay (RP) je způsob hraní, při kterém hráč přebírá roli své postavy a vytváří vlastní příběh. Tento příběh se musí přirozeně prolínat s událostmi a příběhy ostatních hráčů, se kterými postava přichází do kontaktu v otevřeném světě.</p>
+            </details>
+            <details>
+                <summary>RP (xddd)</summary>
+                <p>Roleplay (RP) je způsob hraní, při kterém hráč přebírá roli své postavy a vytváří vlastní příběh. Tento příběh se musí přirozeně prolínat s událostmi a příběhy ostatních hráčů, se kterými postava přichází do kontaktu v otevřeném světě.</p>
+            </details>
+        </details>
+    </details>
+</main>
+
+<footer>
+    <p>&copy; 2025 immortals RP – Všechna práva vyhrazena</p>
+</footer>
+
+<div class="cookies" id="cookie-box">
+    <p>Používáme cookies pro zlepšení vašeho zážitku z prohlížení.</p>
+    <button onclick="acceptCookies()">Přijmout</button>
+    <button onclick="acceptCookies()">Více informací</button>
+</div>
+
+<script>
+    function acceptCookies() {
+        localStorage.setItem('cookiesAccepted', 'true');
+        document.getElementById('cookie-box').style.display = 'none';
+    }
+
+    window.addEventListener('DOMContentLoaded', function() {
+        if (localStorage.getItem('cookiesAccepted') === 'true') {
+            document.getElementById('cookie-box').style.display = 'none';
+        }
+    });
+</script>
+</body>
+</html>

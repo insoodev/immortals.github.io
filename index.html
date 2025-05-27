@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title> immortals RP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pravidla.css">
+    <!-- <style> 
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('img/image.png') center/cover no-repeat;
+            filter: blur(8px);
+            z-index: -1;
+        }
+        body {
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        .black-bar-top,
+        .black-bar-bottom {
+            height: 40px;
+            width: 100%;
+            background-color: black;
+        }
+    </style> -->
+</head>
+<body>
+<div class="black-bar-top"></div>
+
+<header>
+    <div class="logo">IMMORTALSRP</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Domů</a></li>
+            <li><a href="pravidla.html">Pravidla</a></li>
+            <li><a href="https://cssz.cz">Obchod</a></li>
+            <!-- <li><a href="pravidla.html">Dokumentace</a></li> -->
+            <li><a href="https://discord.com/invite/Ctj9zQArJk" target="_blank"><i class="fa-brands fa-discord"></i></a></li>
+            <!-- <li><a href="#" class="discord-btn">Přihlásit se</a></li> -->
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <h1>Vítej na immortals!</h1>
+        <p>Vstup do světa neomezených možností. Vytvoř si svůj příběh, buduj své impérium a zanech stopu ve městě plném příležitostí.</p>
+        <a href="https://discord.com/invite/Ctj9zQArJk" class="discord-btn">Připoj se na náš Discord</a>
+        <a href="https://cfx.re/join/5x6ga7" class="cfxreconnect">Připoj se do hry!</a>
+
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 immortals RP – Všechna práva vyhrazena</p>
+</footer>
+
+<div class="black-bar-bottom"></div>
+
+<div class="cookies" id="cookie-box">
+    <p>Používáme cookies pro zlepšení vašeho zážitku z prohlížení.</p>
+    <button onclick="acceptCookies()">Přijmout</button>
+    <button onclick="acceptCookies()">Více informací</button>
+</div>
+
+<script>
+    function acceptCookies() {
+        localStorage.setItem('cookiesAccepted', 'true');
+        document.getElementById('cookie-box').style.display = 'none';
+    }
+
+    window.addEventListener('DOMContentLoaded', function() {
+        if (localStorage.getItem('cookiesAccepted') === 'true') {
+            document.getElementById('cookie-box').style.display = 'none';
+        }
+    });
+</script>
+</body>
+</html>
